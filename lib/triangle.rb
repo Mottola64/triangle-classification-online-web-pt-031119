@@ -40,11 +40,12 @@ class Triangle
    # binding.pry
     if length_illegal? || triangle_inequality_illegal?
       raise TriangleError
-    
+     elsif equilateral?
+      :equilateral
     elsif isosceles?
       :isosceles
-   
-    else scalene?
+  
+  else scalene?
       :scalene
     end
     
